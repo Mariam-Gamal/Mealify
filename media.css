@@ -1,0 +1,282 @@
+/* ===========================SMALL==================== */
+@media screen and (min-width:0) and (max-width:768px) {
+    /* ============navbar============= */
+    .nav-menu{
+    display: block;
+    }
+    .nav-list{
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #f1f1f1;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transition: transform 400ms;
+    }  
+    .nav-list:target {
+        transform: translateX(0);
+    }
+    nav:has(.nav-list:target) {
+        height: 100%;
+        background-color: hsl( var(--light-hue), var(--light-saturation), var(--light-lightness), 0.7 );
+    }
+
+    .nav-list .close-icon {
+     display: block;
+     padding: 10px 15px 5px;
+    } 
+    .nav-list li{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .mode-btn{
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    /*========== header ========== */
+    .header .container{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .header-pic {
+        width: 100%;
+     
+    }
+    .header-content{
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    }
+
+    /*========== chefs ========== */
+    .chef{
+        width: 100%;
+    }
+    /*========== gallery========== */
+    .gallery .container{
+     max-width: 540px;
+    }
+    .gallery-photos{
+        height: auto;
+    }
+    picture{
+        width: 100%;
+    }
+    .gallery .pizza{
+        order: 1;
+    }
+    .gallery .burger{
+        order: 2;
+    }
+    .gallery .slices{
+        order: 3;
+    }
+    .gallery .frittata{
+        order: 4;
+    }
+    .gallery .steak {
+        order: 5;
+    }
+    .gallery .fried{
+        order: 6;
+    }
+    .gallery .kebab{
+        order: 7;
+    }
+    /*=========== contact=========== */
+    .details .deta{
+        width: 100%;
+    }
+    form .user input{
+        width: 100%;
+    }
+    /* =========FOOTER=========== */
+    footer .about{
+    width: 100%;        
+    order: 1;
+    }
+    footer .con{
+    width: 100%;    
+    order: 3;
+    }
+    footer .sub{
+       width: 100%;
+       order: 2; 
+    }
+}
+/*========================== MEDIUM====================== */
+@media screen and (min-width:769px) and (max-width:992px){
+       /* ============navbar============= */
+       .nav-menu{
+        display: block;
+    }
+    .nav-list{
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #f1f1f1;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transition: transform 400ms;
+    }  
+    .nav-list:target {
+        transform: translateX(0);
+    }
+    nav:has(.nav-list:target) {
+        height: 100%;
+        background-color: hsl( var(--light-hue), var(--light-saturation), var(--light-lightness), 0.7 );
+    }
+
+    .nav-list .close-icon {
+     display: block;
+     padding: 10px 15px 5px;
+    } 
+    .nav-list li{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .mode-btn{
+        margin-right: 20px;
+        margin-left: auto;
+    }
+     /*========== header ========== */
+     .header .container{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .header-pic {
+        width: 100%;
+     
+    }
+    .header-content{
+        width: 100%;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    }
+    /*========== chefs ========== */
+    .chef{
+    width:calc(calc(100% - var(--gap)) / 2);
+    }
+    /*========= gallery======== */
+    .gallery .container{
+    max-width: 720px;
+    }
+    .gallery-photos{
+        height: 1405px;
+    }
+    picture{
+     width: calc(calc(100% - var(--gap)) / 2);
+    }
+    .gallery .pizza{
+        order: 1;
+    }
+    .gallery .burger{
+        order: 2;
+    }
+    .gallery .slices{
+        order: 3;
+    }
+    .gallery .frittata{
+        order: 4;
+    }
+    .gallery .steak {
+        order: 5;
+    }
+    .gallery .fried{
+        order: 6;
+    }
+    .gallery .kebab{
+        order: 7;
+    }
+     /*========= contact======== */
+     form .user input{
+        width: 100%;
+    }
+    /* ========FOOTER========== */
+    footer .about{
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: 1;
+    }
+    footer .con{
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: 2;
+    }
+    footer .sub{
+       width: 100%;
+       order: 3; 
+    }
+
+}
+/* =============================LARGE=================== */
+@media screen and (min-width:993px) and (max-width:1200px){
+    /* ============navbar============= */
+    .nav-menu{
+        display: block;
+    }
+    .nav-list{
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #f1f1f1;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transition: transform 400ms;
+    }  
+    .nav-list:target {
+        transform: translateX(0);
+    }
+    nav:has(.nav-list:target) {
+        height: 100%;
+        background-color: hsl( var(--light-hue), var(--light-saturation), var(--light-lightness), 0.7 );
+    }
+
+    .nav-list .close-icon {
+     display: block;
+     padding: 10px 15px 5px;
+    } 
+    .nav-list li{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    .mode-btn{
+        margin-right: 20px;
+        margin-left: auto;
+    }
+   
+    /*=========== gallery=========== */
+    .gallery .container{
+     max-width: 960px;
+    }
+    .gallery-photos{
+        height: 845px;
+    }
+    /* ===========FOOTER=========== */
+    footer .about{
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: 1;
+    }
+    footer .con{
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: 2;
+    }
+    footer .sub{
+       width: 100%;
+       order: 3; 
+    }
+}
